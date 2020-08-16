@@ -64,29 +64,3 @@ CREATE TABLE titles(
 
 SELECT *
 FROM titles
--- --------------------------
--- join? why from salaries
-CREATE VIEW empsal AS
-SELECT e.emp_no, e.first_name, e.last_name, e.sex, s.salary
-FROM salaries AS s
-INNER JOIN employees AS e ON
-s.emp_no=e.emp_no;
-
-SELECT *
-FROM empsal
--- --------------------------
-CREATE OR REPLACE VIEW hired86 AS
-SELECT first_name, last_name, hire_date
-FROM employees
-WHERE hire_date BETWEEN '1986-1-1' AND '1986-12-31'
-ORDER BY hire_date;
-
-SELECT *
-FROM hired86
--- --------------------------
-CREATE VIEW allmanagers AS
-SELECT first_name, last_name, hire_date
-FROM employees
-
-SELECT *
-FROM allmanagers
