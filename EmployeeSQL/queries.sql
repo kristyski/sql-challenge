@@ -1,3 +1,5 @@
+DROP TABLE employees;
+
 CREATE TABLE employees(
 	emp_no INT NOT NULL,
 	emp_title_id VARCHAR,
@@ -21,7 +23,6 @@ FROM departments
 -- --------------------------
 DROP TABLE dept_emp;
 
--- ask Michael about id
 CREATE TABLE dept_emp(
 	id SERIAL,
 	emp_no INT,
@@ -34,7 +35,6 @@ FROM dept_emp
 -- --------------------------
 DROP TABLE dept_manager;
 
--- does this table need a primary key?
 CREATE TABLE dept_manager(
 	id SERIAL,
 	dept_no VARCHAR,
