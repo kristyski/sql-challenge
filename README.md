@@ -1,8 +1,8 @@
-# sql-challenge
-Kristy Anderson
-August 23, 2020
-Data Analytics
-SQL-Challenge Homework
+## sql-challenge
+#Kristy Anderson
+#August 23, 2020
+#Data Analytics
+#SQL-Challenge Homework
 
 Please view the DatabaseDiagram.png for the entity relationship diagram for this data.
 
@@ -15,7 +15,7 @@ You can run each view through the ---------- marks and view the results in your 
 
 Data Analysis
 After reviewing this employee data, below are my findings:
-Question 1: this view returns all employee records and includes each employee's alalary. Salaries range from $40,000 to $129,492.
+1. Question 1: this view returns all employee records and includes each employee's alalary. Salaries range from $40,000 to $129,492.
 Question 2: this view returns the 36,150 employees who were hired in 1986.
 Question 3: this view returns the 24 managers. Several records have the same departments, verify with management for accuracy.
 Question 4: this view lists all employees and their corresponding department name. In reviewing this data, I noticed employees assigned to multiple departments. Verify with management if these duplications are accurate.
