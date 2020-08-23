@@ -1,7 +1,7 @@
-# Kristy Anderson
+## Kristy Anderson
 ## August 23, 2020
-###### Data Analytics
-# SQL-Challenge Homework
+## Data Analytics
+## SQL-Challenge Homework
 
 Please view the DatabaseDiagram.png for the entity relationship diagram for this data.
 
