@@ -1,6 +1,3 @@
-DROP TABLE dept_emp;
--- CASCADE;
-
 CREATE TABLE IF NOT EXISTS departments
 (
     dept_no VARCHAR(4) UNIQUE,
@@ -34,7 +31,6 @@ CREATE TABLE IF NOT EXISTS dept_emp
     dept_no VARCHAR(4),
     PRIMARY KEY(dept_emp_id)
 );
--- changed above P KEY from emp_no, dept_no
 
 CREATE TABLE IF NOT EXISTS dept_manager
 (
@@ -43,7 +39,6 @@ CREATE TABLE IF NOT EXISTS dept_manager
     emp_no INTEGER,
     PRIMARY KEY(dept_manager_id)
 );
---changed above P KEY from emp_no, dept_no
 
 CREATE TABLE IF NOT EXISTS salaries
 (
@@ -67,13 +62,6 @@ ALTER TABLE departments
     REFERENCES dept_manager(dept_no)
     MATCH SIMPLE
 ;
-
--- ALTER TABLE departments
---     ADD    FOREIGN KEY (dept_no)
---     REFERENCES dept_emp(emp_no)
---     MATCH SIMPLE
--- ;
-
 ALTER TABLE employees
     ADD    FOREIGN KEY (emp_no)
     REFERENCES dept_emp(emp_no)
@@ -86,74 +74,14 @@ ALTER TABLE employees
     MATCH SIMPLE
 ;
 
--- ALTER TABLE employees
---     ADD    FOREIGN KEY (emp_title_id)
---     REFERENCES titles(title_id)
---     MATCH SIMPLE
--- ;
-    
 ALTER TABLE employees
     ADD    FOREIGN KEY (emp_no)
     REFERENCES salaries(emp_no)
     MATCH SIMPLE
 ;
-    
--- ALTER TABLE employees
---     ADD    FOREIGN KEY (emp_no)
---     REFERENCES dept_manager(dept_no)
---     MATCH SIMPLE
--- ;
-    
+
 ALTER TABLE titles
     ADD    FOREIGN KEY (title_id)
     REFERENCES employees(emp_title_id)
     MATCH SIMPLE
 ;
-    
--- ALTER TABLE dept_emp
---     ADD    FOREIGN KEY (dept_no)
---     REFERENCES departments(dept_no)
---     MATCH SIMPLE
--- ;
-    
--- ALTER TABLE dept_emp
---     ADD    FOREIGN KEY (dept_emp_id)
---     REFERENCES employees(emp_no)
---     MATCH SIMPLE
--- ;
-    
--- ALTER TABLE dept_emp
---     ADD    FOREIGN KEY (emp_no)
---     REFERENCES employees(emp_no)
---     MATCH SIMPLE
--- ;
-    
--- ALTER TABLE dept_manager
---     ADD    FOREIGN KEY (emp_no)
---     REFERENCES employees(emp_no)
---     MATCH SIMPLE
--- ;
-    
--- ALTER TABLE dept_manager
---     ADD    FOREIGN KEY (dept_no)
---     REFERENCES departments(dept_no)
---     MATCH SIMPLE
--- ;
-    
--- ALTER TABLE dept_manager
---     ADD    FOREIGN KEY (emp_no)
---     REFERENCES employees(hire_date)
---     MATCH SIMPLE
--- ;
-    
--- ALTER TABLE dept_manager
---     ADD    FOREIGN KEY (emp_no)
---     REFERENCES employees(emp_no)
---     MATCH SIMPLE
--- ;
-
--- ALTER TABLE salaries
---     ADD    FOREIGN KEY (emp_no)
---     REFERENCES employees(emp_no)
---     MATCH SIMPLE
--- ;
