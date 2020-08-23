@@ -6,7 +6,7 @@
 
 Please view the DatabaseDiagram.png for the entity relationship diagram for this data.
 
-![GitHub Logo](EmployeeSQL/DatabaseDiagram.png)
+![](EmployeeSQL/DatabaseDiagram.png)
 
 To replicate my work, you can use pgAdmin to connect to Postgres. Once in pgAdmin, find the database employeesSQL_db.
 On the employeesSQL_db, query my file named "schema.sql" first and run the code, in the order presented.
