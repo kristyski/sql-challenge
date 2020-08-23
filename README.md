@@ -8,15 +8,15 @@ Please view the DatabaseDiagram.png for the entity relationship diagram for this
 
 ![](EmployeeSQL/DatabaseDiagram.jpeg)
 
-To replicate my work, you can use pgAdmin to connect to Postgres. Once in pgAdmin, find the database employeesSQL_db.
-On the employeesSQL_db, query my file named "schema.sql" first and run the code, in the order presented.
-Then import six (6) corresponding .csvs into each table, be sure to remove the new primary key column for both dept_emp and dept_manager tables.
+To replicate my work, you can use pgAdmin to connect to Postgres. Once in pgAdmin, find the database employeesSQL_db.  
+On the employeesSQL_db, query my file named "schema.sql" first and run the code, in the order presented.  
+Then import six (6) corresponding .csvs into each table, be sure to remove the new primary key column for both dept_emp and dept_manager tables.<br/>
 
-Next, open the queries.sql file and run the views.
-You can run each view through the ---------- marks and view the results in your Data Output window.
+Next, open the queries.sql file and run the views.  
+You can run each view through the ---------- marks and view the results in your Data Output window.<br/>
 
-Data Analysis
-After reviewing this employee data, below are my findings:
+Data Analysis  
+After reviewing this employee data, below are my findings:  
 1. this view returns all employee records and includes each employee's alalary. Salaries range from $40,000 to $129,492.
 1. this view returns the 36,150 employees who were hired in 1986.
 1. this view returns the 24 managers. Several records have the same departments, verify with management for accuracy.
@@ -26,4 +26,4 @@ After reviewing this employee data, below are my findings:
 1. there are over 137,000 employees in the Sales and Development departments
 1. there are a very surprising number of duplicate last names for ALL last names. We might need to investigate further the validity of this data.
 
-Epilogue: after running this query, you will get a chuckle.
+Epilogue: after running this query, you will get a **chuckle**.
